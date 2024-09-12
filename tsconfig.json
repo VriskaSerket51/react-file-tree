@@ -1,13 +1,19 @@
 {
+  "include": ["./src/**/*.*"],
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ES2023",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "declaration": true,
+    "outDir": "./dist",
     "jsx": "react",
-    "noEmit": true,
     "strict": true,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "esModuleInterop": true
   }
 }
